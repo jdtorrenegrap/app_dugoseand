@@ -1,5 +1,3 @@
-fastapi
-uvicorn
-pandas
-pydantic
-openpyxl
+streamlit==1.12.0
+requests==2.26.0
+pandas==1.3.3
