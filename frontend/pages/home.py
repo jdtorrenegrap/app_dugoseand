@@ -2,8 +2,6 @@ import streamlit as st
 from config import set_up_credentials
 from question import render_faq
 
-# Ruta del archivo SVG
-svg_path = r"C:\Users\jesus\OneDrive\Escritorio\app_dugoseand\frontend\assets\line-md--chat-round-dots-filled.svg"
 
 def render_home():
 
@@ -37,20 +35,12 @@ if __name__ == "__main__":
     # Configuración inicial de la app
     st.set_page_config(
         page_title="A Coffee and seend",
-        page_icon=svg_path,  # Puedes usar un ícono personalizado aquí.
+        page_icon="",
         layout="centered",
     )
 
     # Crear un menú en la barra lateral
-    st.markdown(
-        f"""
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <div>{open(svg_path).read()}</div>
-            <h1 style="margin: 0; font-size: 2rem;">DugoSeand</h1>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    
 
     # Crear pestañas
     tab1, tab2, tab3 = st.tabs(

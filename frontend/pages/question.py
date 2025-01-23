@@ -28,8 +28,7 @@ def render_faq():
         - Nombre
         - Correo Electrónico
         """)
-        # st.image("path/to/excel_columns_image.png", caption="Ejemplo de columnas en un archivo Excel")
-
+       
     with st.expander("¿Cómo sé cuáles son las hojas de mi Excel?"):
         st.write("""
         Para identificar las hojas de tu archivo Excel:
@@ -41,7 +40,6 @@ def render_faq():
         - Hoja1
         - Contactos
         """)
-        # st.image("path/to/excel_sheets_image.png", caption="Ejemplo de hojas en un archivo Excel")
 
     with st.expander("¿Guardan la información de los usuarios?"):
         st.write("""
